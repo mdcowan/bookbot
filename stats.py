@@ -17,4 +17,20 @@ def get_num_characters(book_text):
         else: 
             num_characters[char] = 1
     return num_characters
-            
+
+# A function that takes a dictionary and returns the value of the "num" key
+# This is how the `.sort()` method knows how to sort the list of dictionaries
+def sort_on(items):
+    return items["num"]
+
+
+def get_sorted_num_list(num_characters):
+    sorted_num_list = []
+    # for each key/value (char:num) pair, create a new dictionary and add it to the list
+    for char in num_characters:
+        num = num_characters[char]
+        sorted_num_list.append({"char": char, "num": num})
+    # sort the list with the highest number in decending order
+    sorted_num_list.sort(reverse=True, key=sort_on)
+
+    return sorted_num_list
