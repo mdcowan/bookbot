@@ -4,7 +4,7 @@ BookBot is my first [Boot.dev](https://www.boot.dev) project!  It is a Python pr
 
 # Prerequisites
 
-Python 3 must be installed to run this program. It can bbe downloaded here: 
+Python 3 must be installed to run this program. It can be downloaded here: 
 https://www.python.org/downloads/
 
 # Usage
